@@ -2,6 +2,7 @@ import "./Heroimage.css"
 
 import React from 'react'
 import heroImage from '../assets/hero.png'
+import me from '../assets/me.png'
 import { Link } from "react-router-dom"
 
 const Heroimage = () => {
@@ -11,16 +12,20 @@ const Heroimage = () => {
         <img className="heroImage" src={heroImage} alt="" />
       </div>
 
-      <div className="content">
+
+      
+        <div className="content">
+        <img className="profile" src={me} alt="profile" />
         <p> HI, I'M HALIMO</p>
         <h1> Web Developer</h1>
         <div>
            <Link to="/projects" className="btn"> Projects</Link>
            <Link to="/contact" className="btn-light"> Contact</Link>
         </div>
+        </div>
 
       </div>
-    </div>
+   
   )
 }
 

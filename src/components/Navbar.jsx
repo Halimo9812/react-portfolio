@@ -5,6 +5,7 @@ import {FaBars, FaTimes} from "react-icons/fa"
 import { useState } from 'react'
 
 
+
 const Navbar = () => {
 
     const[click, setClick] = useState(false);
@@ -23,7 +24,7 @@ window.addEventListener("scroll",changeColor);
   return (
     <div className= { color? 'header header-bg' : 'header'}>
      <Link to='/'>
-        <h1> portfolio</h1>
+        <h1> My Portfolio.</h1>
      </Link>
      <ul className= {click? "nav-menu active" : 'nav-menu'}>
         <li>

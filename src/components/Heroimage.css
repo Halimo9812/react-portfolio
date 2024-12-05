@@ -49,11 +49,29 @@
     text-transform: uppercase;
 }
 
+.profile {
+    width: 120px; /* Set a fixed width for the profile image */
+    height: 120px; /* Set a fixed height to keep the profile image square */
+    border-radius: 50%; /* Make the profile image circular */
+    object-fit: cover; /* Ensure the image is contained and does not distort */
+  }
+
+  .content {
+    display: flex; /* Use flexbox to align elements horizontally */
+    flex-direction: column;
+    align-items: center; /* Vertically center-align the content */
+    gap: 20px; /* Adds space between the text and profile image */
+    padding: 20px; /* Add padding around the content */
+    max-width: 400px;
+    text-align: center;
+    margin: auto;
+  }
+
  .content .btn{
     margin: 1rem 0.2rem ;
  }
 
- @media screen and (max-width:640px){
+ @media screen and (max-width:768px){
     .hero .content h1 {
         font-size: 3rem;
     }
@@ -62,5 +80,17 @@
 
         font-size: 1.4rem;
     }
+
+    .content {
+        padding: 10px; /* Reduce padding on smaller screens */
+        max-width: 100%; /* Allow content to stretch on smaller screens */
+      }
+    
+      .profile {
+        width: 100px; /* Resize the profile image */
+        height: 100px;
+      }
+    
+
     
  }
